@@ -1,0 +1,303 @@
+/*
+ * Base structure
+ */
+/* Move down content because we have a fixed navbar that is 50px tall */
+
+body {
+  padding-top: 90px;
+  font-size: 13px;
+}
+
+/* Columns */ 
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+    min-height: 1px;
+    padding-left: 10px;
+    padding-right: 10px;
+    position: relative;
+}
+
+/*
+ * Global add-ons
+ */
+
+.sub-header {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+/*
+ * Top navigation
+ * Hide default border to remove 1px line.
+ */
+
+.navbar-fixed-top {
+  border: 0;
+}
+
+/*
+ * Sidebar
+ */
+/* Hide for mobile, show later */
+
+.sidebar {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .sidebar {
+    position: fixed;
+    top: 91px;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    display: block;
+    padding: 20px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    /* Scrollable contents if viewport is shorter than content. */
+
+    background-color: #f8fafe;
+    border-right: 1px solid #eee;
+  }
+}
+
+/* Sidebar navigation */
+
+.nav-sidebar {
+  margin-right: -21px;
+  /* 20px padding + 1px border */
+
+  margin-bottom: 20px;
+  margin-left: -20px;
+}
+
+.nav-sidebar > li > a {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.nav-sidebar > .active > a, .nav-sidebar > .active > a:hover, .nav-sidebar > .active > a:focus {
+  color: #fff;
+  background-color: #428bca;
+}
+
+.nav-tabs li.bv-tab-error > a {
+  color: #555;
+}
+
+/*
+ * Main content
+ */
+
+.en-markup-crop-options {
+  top: 18px !important;
+  left: 50% !important;
+  margin-left: -100px !important;
+  width: 200px !important;
+  border: 2px rgba(255, 255, 255, .38) solid !important;
+  border-radius: 4px !important;
+}
+
+.en-markup-crop-options div div:first-of-type {
+  margin-left: 0px !important;
+}
+
+.main {
+  padding: 20px;
+}
+
+@media (min-width: 768px) {
+  .main {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+}
+
+.main .page-header {
+  margin-top: 0;
+}
+
+/*
+ * Placeholder dashboard ideas
+ */
+
+.placeholders {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.placeholders h4 {
+  margin-bottom: 0;
+}
+
+.placeholder {
+  margin-bottom: 20px;
+}
+
+.placeholder img {
+  display: inline-block;
+  border-radius: 50%;
+}
+
+.page-header {
+  padding-bottom: 50px;
+  margin: 40px 0 20px;
+  border-bottom: none;
+}
+
+.navbar {
+  min-height: 90px;
+}
+
+.navbar-inverse {
+  background-color: #4a89dc;
+  border: none;
+}
+
+.navbar-inverse .navbar-brand {
+  color: #fff;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+  color: #fff;
+}
+
+.nav-tabs {
+  border-bottom: 0px;
+}
+
+.nav-tabs > li > a {
+  border: 1px solid #ccc;
+  border-radius: 4px 4px 0 0;
+  border-bottom: none;
+  line-height: 1.42857;
+  margin-right: none !important;
+  display: block;
+  padding: 8px 12px;
+}
+
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+  background-color: #f5f8fb;
+  border-color: #eee;
+  border-bottom: none;
+}
+/* lists */
+
+@media (min-width: 320px) {
+  .dl-horizontal dt {
+    float: left;
+    width: 130px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    clear: left;
+    text-align: left;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
+
+@media (min-width: 320px) {
+  .dl-horizontal dd {
+    margin-left: 150px;
+  }
+}
+
+/*
+  errors
+  */
+
+.error {
+  color: #a94442;
+  font-size: 0.8em;
+  padding-bottom: 10px;
+}
+
+legend {
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin-bottom: 8px;
+  font-size: 18px;
+  line-height: inherit;
+  color: #3a6db1;
+  border: 0;
+  border-bottom: none;
+}
+
+label {
+  display: inline-block;
+  max-width: 100%;
+  margin-bottom: 3px;
+  font-weight: 500;
+  color: #666666;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  height: 25px;
+  padding: 3px 6px;
+  font-size: 12px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+
+.btn {
+  height: 25px;
+  line-height: 0em;
+}
+
+/* Tables */
+.table-striped > tbody > tr:nth-child(2n+1) {
+  background-color: #fff;
+}
+
+
+.well {
+  min-height: 20px;
+  margin-bottom: 15px;
+  background-color: #f5f8fb;
+}
+
+.form-control-feedback {
+  display: block;
+  height: 34px;
+  line-height: 28px;
+  pointer-events: none;
+  position: absolute;
+  right: 12px;
+  text-align: center;
+  top: 0;
+  width: 34px;
+  z-index: 2;
+}
+input {
+  height: 22px;
+  padding: 5px 5px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 3px;
+}
+.input-xs {
+
+}
+
+.has-success .help-block, .has-success .control-label, .has-success .radio, .has-success .checkbox, .has-success .radio-inline, .has-success .checkbox-inline, .has-success.radio label, .has-success.checkbox label, .has-success.radio-inline label, .has-success.checkbox-inline label {
+  color: #666;
+}
+
+/*.glyphicon {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: 400;
+    line-height: .8;
+}*/
